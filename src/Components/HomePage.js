@@ -11,7 +11,7 @@ export default function HomePage() {
 
     return(
         <>
-        <section style={{backgroundImage:` url(${hero})`}} className="  flex flex-col p-2  h-screen gap-3 items-center justify-center bg-no-repeat bg-cover bg-center m-1 rounded-lg bg-gray-900/50 ">
+        <section style={{backgroundImage:` url(${hero})`}} className="  flex flex-col p-2  h-screen gap-3 items-center justify-center bg-no-repeat bg-cover bg-center m-1 rounded-lg bg-gray-900/50  ">
 
           
                 <h1 className="text-2xl font-bold md:text-[35px] leading-[27px] md:leading-[45px] text-">HI, i'm Marta Iglesias <br/>

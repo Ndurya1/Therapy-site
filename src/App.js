@@ -6,6 +6,8 @@ import HomePage from './Components/HomePage';
 import Header from './Components/Header'
 import DynamicBackground from './Components/DynamicBackground';
 import Contacts from './Components/Contacts';
+import Slider from './Components/Slider';
+import Laundry from './Components/Laundry';
 
 
 function App() {
@@ -14,8 +16,8 @@ function App() {
     <div className="App bg-gray-100">
       <Header/>
       <Routes>
-        <Route path="/" element={<HomePage/>} />
-        <Route path="/Contacts" element={<Contacts/>} />
+        <Route path="/" element={<Laundry/>} />
+       
       </Routes>
     
    

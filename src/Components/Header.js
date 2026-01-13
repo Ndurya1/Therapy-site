@@ -9,9 +9,9 @@ export default function Navbar() {
     <>
      
       <div className="relative">
-        <header className="flex justify-between items-center pl-2 pr-2 top-0 bg-slate-800 p-3 border-lg text-white relative z-20">
-          <div className="text-blue-400 font-pacifico">
-            <h1>MI Counsellor</h1>
+        <header className="flex justify-between items-center pl-2 pr-2 top-0 bg-gray-800 p-3 border-lg text-white relative z-20">
+          <div className="text-white font-pacifico">
+            <h1>Sparkle Dry Cleaners</h1>
           </div>
           
          
@@ -26,7 +26,10 @@ export default function Navbar() {
               <a href="#Projects">Services</a>
             </li>
             <li className="flex justify-center items-center  hover:bg-blue-700 px-6 rounded-lg shadow-lg hover:duration-1000 hover:shadow-blue-500 py-4">
-              <a href="#Skills">Trauma Work</a>
+              <a href="#Skills">Testimonials</a>
+            </li>
+            <li className="flex justify-center items-center  hover:bg-blue-700 px-6 rounded-lg shadow-lg hover:duration-1000 hover:shadow-blue-500 py-4">
+              <a href="#Skills">Gallery</a>
             </li>
             <li className=" pl-4 pr-4 p-2  border border-gray-300  bg-blue-700 px-6 rounded-lg shadow-lg duration-1000 hover:shadow-blue-500 py-4">
               <a href="/Contacts">Contacts</a>
@@ -91,7 +94,14 @@ export default function Navbar() {
             href="#Projects"
             onClick={() => setMenuOpen(false)}
           >
-            Trauma work
+            Testimonials
+          </a>
+          <a
+            className="hover:bg-gray-700 w-full py-2 rounded-lg shadow-md hover:shadow-blue-400"
+            href="/Contacts"
+            onClick={() => setMenuOpen(false)}
+          >
+            Gallery
           </a>
           <a
             className="hover:bg-gray-700 w-full py-2 rounded-lg shadow-md hover:shadow-blue-400"
