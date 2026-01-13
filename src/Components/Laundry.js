@@ -1,6 +1,8 @@
 // src/App.js
 import React from 'react';
 import ReactDOM from 'react-dom';
+import before from '../Assets/before.jpeg';
+import after from '../Assets/after.jpeg';
 
 
 
@@ -52,22 +54,22 @@ export default function Laundry() {
     </section>
  
     <section id="services" className="p-4 bg-gray-100">
-      <h2 className="text-3xl font-bold text-center">Our Services</h2>
+      <h2 className="text-3xl font-bold text-center">Our Services <span><hr className='border-none p-[1px] bg-blue-800 w-[130px] flex justify-center items-center m-auto'/></span></h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-4">
         {services.map((service, index) => (
           <div key={index} className="border p-4 text-center rounded-md  bg-white shadow-md shadow-black/50">
-            <h3 className="font-semibold">{service.name}</h3>
-            <p className="text-lg">{service.price}</p>
+            <h3 className="font-semibold text-blue-400">{service.name}</h3>
+            <p className="text-[14px]">{service.price}</p>
           </div>
         ))}
       </div>
     </section>
 
-<section id="testimonials" className="p-4 bg-blue-400">
-      <h2 className="text-3xl font-bold text-center">Testimonials</h2>
+<section id="testimonials" className=" flex flex-col justify-center items-center gap-5 p-4 bg-blue-400">
+      <h2 className="text-3xl font-bold text-center">Testimonials <span><hr className='border-none p-[1px] bg-blue-800 w-[130px] flex justify-center items-center m-auto'/></span> </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
         {testimonials.map((testimonial, index) => (
-          <div key={index} className="border p-4 bg-white text-center">
+          <div key={index} className="border p-2 rounded-md w-[330px] gap-10 bg-white text-center">
             <p className="italic">"{testimonial.feedback}"</p>
             <p className="font-bold">- {testimonial.name}</p>
           </div>
@@ -75,18 +77,30 @@ export default function Laundry() {
       </div>
     </section>
 
-<section id="gallery" className="p-4 bg-gray-100">
-      <h2 className="text-3xl font-bold text-center">Before and After</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-        <img src="before1.jpg" alt="Before Cleaning" className="h-40 rounded-md object-cover" />
-        <img src="after1.jpg" alt="After Cleaning" className="h-40 rounded-md object-cover" />
+<section id="gallery" className="p-4 bg-gray-100 gap-4 flex flex-col justify-center items-center">
+      <h2 className="text-3xl font-bold text-center">Before and After <span><hr className='border-none p-[1px] bg-blue-800 w-[130px] flex justify-center items-center m-auto'/></span></h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 m-auto  justify-center items-center">
+        <img src={before} alt="Before Cleaning" className="h-40 rounded-md object-cover" />
+        <img src={after} alt="After Cleaning" className="h-40 rounded-md object-cover" />
       </div>
+    </section>
+
+     <section id="about" className="p-4 bg-blue-400">
+      <h2 className="text-3xl font-bold text-center">About Us <span><hr className='border-none p-[1px] bg-blue-800 w-[130px] flex justify-center items-center m-auto'/></span></h2>
+      <p className="mt-4 text-left max-w-2xl mx-auto text-[15px] ">
+        At Sparkle Dry Cleaners, we are dedicated to providing top-notch cleaning solutions for homes and vehicles.
+        Our team of professional cleaners is committed to delivering exceptional service and ensuring your 
+        satisfaction. With years of experience in the industry, we understand the unique cleaning needs of our clients 
+        and strive to exceed their expectations every time. 
+        Whether it's a deep home cleaning, car detailing, or carpet and sofa cleaning, we've got you covered. 
+        Your cleanliness is our priority!
+      </p>
     </section>
     
 
      <section id="contact" className="p-4 bg-gray-100">
       <h2 className="text-3xl font-bold text-center">Get a Custom Quote</h2>
-      <p className="text-center mt-2">Have specific cleaning needs? Reach out to us on WhatsApp!</p>
+      <p className="text-center mt-2">Have specific cleaning needs? Reach out to us on WhatsApp to get a custom quote!</p>
       <div className="flex justify-center mt-4">
         <a
           href={`https://wa.me/${whatsappNumber}`}

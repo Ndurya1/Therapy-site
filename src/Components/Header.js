@@ -20,19 +20,19 @@ export default function Navbar() {
               <Link to="/">Home</Link>
             </li>
             <li className="flex justify-center items-center  hover:bg-blue-700 px-6 rounded-lg shadow-lg hover:duration-1000 hover:shadow-blue-500 py-4">
-              <a href="#About">About</a>
+              <a href="#about">About</a>
             </li>
             <li className="flex justify-center items-cente  hover:bg-blue-700 px-6 rounded-lg shadow-lg hover:duration-1000 hover:shadow-blue-500 py-4">
-              <a href="#Projects">Services</a>
+              <a href="#services">Services</a>
             </li>
             <li className="flex justify-center items-center  hover:bg-blue-700 px-6 rounded-lg shadow-lg hover:duration-1000 hover:shadow-blue-500 py-4">
-              <a href="#Skills">Testimonials</a>
+              <a href="#testimonials">Testimonials</a>
             </li>
             <li className="flex justify-center items-center  hover:bg-blue-700 px-6 rounded-lg shadow-lg hover:duration-1000 hover:shadow-blue-500 py-4">
-              <a href="#Skills">Gallery</a>
+              <a href="#gallery">Gallery</a>
             </li>
             <li className=" pl-4 pr-4 p-2  border border-gray-300  bg-blue-700 px-6 rounded-lg shadow-lg duration-1000 hover:shadow-blue-500 py-4">
-              <a href="/Contacts">Contacts</a>
+              <a href="#contacts">Contacts</a>
             </li>
           </ul>
 
@@ -77,35 +77,35 @@ export default function Navbar() {
 
           <a
             className="hover:bg-gray-700 w-full py-2 rounded-lg shadow-md hover:shadow-blue-400"
-            href="#About"
+            href="#about"
             onClick={() => setMenuOpen(false)}
           >
             About
           </a>
           <a
             className="hover:bg-gray-700 w-full py-2 rounded-lg shadow-md hover:shadow-blue-400"
-            href="#Skills"
+            href="#services"
             onClick={() => setMenuOpen(false)}
           >
             Services
           </a>
           <a
             className="hover:bg-gray-700 w-full py-2 rounded-lg shadow-md hover:shadow-blue-400"
-            href="#Projects"
+            href="#testimonials"
             onClick={() => setMenuOpen(false)}
           >
             Testimonials
           </a>
           <a
             className="hover:bg-gray-700 w-full py-2 rounded-lg shadow-md hover:shadow-blue-400"
-            href="/Contacts"
+            href="#gallery"
             onClick={() => setMenuOpen(false)}
           >
             Gallery
           </a>
           <a
             className="hover:bg-gray-700 w-full py-2 rounded-lg shadow-md hover:shadow-blue-400"
-            href="/Contacts"
+            href="#contacts"
             onClick={() => setMenuOpen(false)}
           >
             Contacts
