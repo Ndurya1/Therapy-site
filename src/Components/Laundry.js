@@ -3,6 +3,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import before from '../Assets/before.jpeg';
 import after from '../Assets/after.jpeg';
+import Clean from '../Assets/Clean.jpg';
 
 
 
@@ -45,12 +46,13 @@ export default function Laundry() {
 
   return (
     <>
-    <section className="bg-blue-400 h-screen flex items-center justify-center text-white text-center">
+    <section className="  bg-blue-400  gap-5 flex flex-col  items-center justify-center text-white text-center ">
       <div>
-        <h1 className="text-5xl font-bold">The Ultimate Dry Cleaning Professionals !</h1>
+        <h1 className="text-5xl p-4 font-bold">The Ultimate Dry Cleaning Professionals !</h1>
         <p className="mt-4 text-lg">We offer the best cleaning solutions for your home and vehicle. we handle everything professionally so you need not worry</p>
         <a href="#services" className="mt-6 inline-block bg-white rounded-md text-blue-600 px-4 py-2 ">Get Started</a>
       </div>
+      <img src={Clean} alt="Cleaned Sofa" className="w-[340px] md:w-[650px] rounded-t-2xl shadow-md shadow-gray-700 h-[400px] justify-center flex items-center m-auto "/>
     </section>
  
     <section id="services" className="p-4 bg-gray-100">
