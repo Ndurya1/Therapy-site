@@ -71,7 +71,7 @@ export default function Laundry() {
       <h2 className="text-3xl font-bold text-center">Testimonials <span><hr className='border-none p-[1px] bg-blue-800 w-[130px] flex justify-center items-center m-auto'/></span> </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
         {testimonials.map((testimonial, index) => (
-          <div key={index} className="border p-2 rounded-md w-[330px] gap-10 bg-white text-center">
+          <div key={index} className="border p-2 rounded-md w-fit gap-10 bg-white text-center">
             <p className="italic">"{testimonial.feedback}"</p>
             <p className="font-bold">- {testimonial.name}</p>
           </div>
